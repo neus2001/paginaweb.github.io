@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de carpetas para los usuarios del dominio</title>
+    <link rel="stylesheet" href="../CSS/crear-carpetas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../HTML/menu.html" class="boton-volver">Volver al Menú</a>
+        <h1>Creación de carpetas</h1>
+    </header>
+    <div class="contact-info">Tel 661 31 15 53 | scriptechnology@gmail.com</div>
+
+    <section class="contenido">
+        <!-- Contenido del cuerpo de la página aquí -->
+        <div class="script-introduction">
+            <p>Este script crea y comparte la carpeta para los perfiles móviles de los usuarios. Verifica si la carpeta 
+                base para perfiles móviles existe; si no, la crea.</p>
+                <p>Una vez realizado este proceso se comparte esta carpeta si aún no 
+                está compartida, obtiene todos los usuarios del dominio y crea carpetas 
+                para sus perfiles dentro de la carpeta base. De esta forma cada usuario tiene una carpeta con su nombre de 
+                cuenta. Esta estructura de carpetas puede utilizarse para almacenar archivos de configuración, datos específicos del usuario, o cualquier otra información relevante para la gestión del sistema.</p>
+                <div class="descargar-script">
+                    <p>Instalar SMB para poder utilizar New-SmbShare y compartir la carpeta donde se almacenan los perfiles móviles.</p>
+                    <p>Descarga el script para instalar SMB:</p>
+                    <button id="btnDescargarScript">Descargar</button>
+                </div>
+                <p class="explicacion-imagen">La imagen muestra un ejemplo visual de cómo se vería el archivo ps1 generado
+                    para descargar. La parte resaltada en rojo es una configuración de ejemplo que se modificará según los
+                    datos introducidos en el formulario.</p>
+                   
+                    
+        </div>
+        <div class="imagen-y-formulario">
+            <div class="imagen-despliegue">
+                <img src="../IMAGEN/crear-carpetas/carpetas0.PNG" class="imagen-principal" alt="Imagen 1">
+                <img src="../IMAGEN/crear-carpetas/carpetas1.PNG" class="imagen-secundaria" alt="Imagen 2"
+                    style="display: none;">
+            </div>
+
+            <br></br>
+            
+            <form id="config-form">
+                <p><strong>Rellena el formulario con tus datos:</strong></p>
+                <input type="text" id="ip" placeholder="Ruta de la carpeta donde se almacenan los perfiles móviles">
+                <input type="text" id="prefix" placeholder="Nombre de la carpeta compartida">
+                <button type="submit">Generar archivo ps1</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Script Support Technology</p>
+    </footer>
+
+    <script src="../JQuery/crear-carpetas.js"></script>
+    <script src="../JavaScript/crear-carpetas.js"></script>
+
+</body>
+
+</html>

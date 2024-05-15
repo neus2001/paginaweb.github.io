@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Support Technology</title>
+    <link rel="stylesheet" href="../CSS/menu.css">
+
+</head>
+
+<body>
+    <header class>
+        <a href="../index.html" class="boton-volver">Volver al Inicio</a>
+        <h1>Script Support Technology</h1>
+        <nav>
+            <ul>
+                <!--Configuració de la red  -->
+                <li><a href="../HTML/configurar-red.html">Configurar red</a></li>
+                <!-- dominio.html es el apartado de Configuración de Active Directory -> Controlador de dominio -->
+                <li><a href="../HTML/dominio.html">Configuración de Active Directory</a></li>
+                <!--objetos.html es el apartado de Administración de Active Directory -> Creación de Objetos -->
+                <li><a href="../HTML/objetos_AD.html">Administración de Active Directory</a></li>
+                <!-- Habilitar la cuenta de usuario -->
+                <li><a href="../HTML/habilitar-cuenta.html">Habilitar cuenta</a></li>
+                <!-- Configuracion de perfiles móviles de usuario -->
+                <li><a href="../HTML/perfiles-moviles.html">Perfiles Móviles</a></li>
+                <!-- Creación de carpetas para cada usuario del dominio -->
+                <li><a href="../HTML/crear-carpetas.html">Creación de carpetas</a></li>
+                <!-- En el siguiente apartado tenemos la configuración de los permisos de las carpetas  -->
+                <li><a href="../HTML/permisos.html">Establecer Permisos</a></li>
+            </ul>
+        </nav>
+        <div class="contact-info">Tel 661 31 15 53 | scriptechnology@gmail.com</div>
+    </header>
+    
+    <div class="script-container">
+        <div class="script-introduction">
+            <p>En las siguientes secciones del menú, explorarás una variedad de scripts que automatizan tareas comunes en sistemas informáticos. Cada script se presenta junto con un formulario que te permite ingresar parámetros específicos. También encontrarás una imagen que muestra el script original, lo que te proporciona una referencia visual de cómo se estructura el script.</p>
+        </div>
+        <div class="script-introduction">
+            <p>Mediante el formulario, puedes personalizar el script según tus necesidades introduciendo tus propios datos. Una vez que completes el formulario, se generará un script personalizado basado en los parámetros que proporcionaste. Este script adaptado estará listo para ser utilizado en tu sistema, lo que te permitirá automatizar tareas de manera eficiente y efectiva.</p>
+        </div>
+        <div class="script-introduction">
+            <p>Explora las secciones del menú, selecciona el script que necesitas y personalízalo según tus requerimientos utilizando el formulario proporcionado. Simplifica tu trabajo diario y maximiza tu productividad con nuestros scripts personalizados.</p>
+        </div>
+    </div>
+
+    <section>
+        <!-- Contenido del cuerpo de la página aquí -->
+        <div class="banner">
+            <img src="../IMAGEN/menu/menu1.PNG" class="banner-img" alt="Imagen 1">
+            <img src="../IMAGEN/menu/menu2.PNG" class="banner-img" alt="Imagen 2">
+            <img src="../IMAGEN/menu/menu3.PNG" class="banner-img" alt="Imagen 3">
+
+            <div class="prev" onclick="cambiarImagen(-1)">&#10094;</div>
+            <div class="next" onclick="cambiarImagen(1)">&#10095;</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Script Support Technology</p>
+    </footer>
+
+    <script src="../JavaScript/menu.js"></script>
+</body>
+
+</html>

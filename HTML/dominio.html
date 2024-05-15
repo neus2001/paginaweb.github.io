@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de la red</title>
+    <link rel="stylesheet" href="../CSS/dominio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../HTML/menu.html" class="boton-volver">Volver al Menú</a>
+        <h1>Controlador de dominio</h1>
+    </header>
+    <div class="contact-info">Tel 661 31 15 53 | scriptechnology@gmail.com</div>
+
+    <section class="contenido">
+        <!-- Contenido del cuerpo de la página aquí -->
+        <div class="script-introduction">
+            <div class="textos">
+                <div class="texto-bloque">
+                    <h2>SERVIDOR</h2>
+                    <p>Primero instalamos el Rol de Active Directory en el servidor, lo que incluye la
+                        instalación de las herramientas de administración necesarias. Posteriormente, el script promueve
+                        este
+                        servidor a un Controlador de Dominio. En este proceso, se crea un nuevo dominio, lo que es
+                        esencial para
+                        establecer
+                        una estructura de red segura y organizada. Además, se toman medidas para garantizar la seguridad
+                        del
+                        dominio al establecer una contraseña de administrador en modo seguro, lo que añade una capa
+                        adicional de
+                        protección a la infraestructura de red.</p>
+                </div>
+                <div class="texto-bloque">
+                    <h2>CLIENTE</h2>
+                    <p>El proceso unir el cliente al dominio facilita la integración de un equipo en un dominio de
+                        Active Directory
+                        específico. Se define el dominio y se solicitan credenciales de usuario autorizado. Luego, se
+                        realiza la
+                        unión al dominio, utilizando las credenciales proporcionadas. Finalmente,
+                        el equipo se reinicia para aplicar los cambios, asegurando así una integración exitosa al
+                        entorno de
+                        Active Directory.</p>
+                </div>
+            </div>
+            <p class="explicacion-imagen">La imagen muestra un ejemplo visual de cómo se vería el archivo ps1 generado
+                para descargar. La parte resaltada en rojo es una configuración de ejemplo que se modificará según los
+                datos introducidos en el formulario.</p>
+        </div>
+
+        <div class="fomulario1">
+            <div class="imagen-y-formulario1">
+                <div class="imagen-despliegue1">
+                    <img src="../IMAGEN/dominio/Script0-server.PNG" class="imagen-principal1" alt="Imagen 1">
+                    <img src="../IMAGEN/dominio/Script-Servidor.PNG" class="imagen-secundaria1" alt="Imagen 2"
+                        style="display: none;">
+                </div>
+        
+                <form id="config-form1">
+                    <h2>SERVIDOR</h2>
+                    <p><strong>Rellena el formulario con tus datos:</strong></p>
+                    <input type="text" id="domain-name1" placeholder="Nombre de dominio" pattern="\w+\.\w+" title="Debe incluir un punto en el nombre del dominio (por ejemplo: ejemplo.com)">
+                    <input type="password" id="admin-password1" placeholder="Contraseña de administrador">
+                    <button type="submit">Generar archivo ps1</button>
+                </form>
+                
+            </div>
+        </div>
+        
+        <div class="formulario2">
+            <div class="imagen-y-formulario2">
+                <div class="imagen-despliegue2">
+                    <img src="../IMAGEN/dominio/Script0-client.PNG" class="imagen-principal2" alt="Imagen 1">
+                    <img src="../IMAGEN/dominio/Script-Cliente.PNG" class="imagen-secundaria2" alt="Imagen 2"
+                        style="display: none;">
+                </div>
+        
+                <form id="config-form2">
+                    <h2>CLIENTE</h2>
+                    <p><strong>Rellena el formulario con tus datos:</strong></p>
+                
+                    <input type="text" id="domain-name2" placeholder="Nombre de dominio"  pattern="\w+\.\w+" title="Debe incluir un punto en el nombre del dominio (por ejemplo: ejemplo.com)">
+    
+                    <button type="submit">Generar archivo ps1</button>
+                </form>
+                
+                
+            </div>
+        </div>
+        
+
+    </section>
+<br></br>
+        <footer>
+            <p>&copy; 2024 Script Support Technology</p>
+        </footer>
+
+        <script src="../JQuery/dominio.js"></script>
+        <script src="../JavaScript/dominio.js"></script>
+
+</body>
+
+</html>

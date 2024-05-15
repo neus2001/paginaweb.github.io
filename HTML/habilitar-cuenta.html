@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de carpetas para los usuarios del dominio</title>
+    <link rel="stylesheet" href="../CSS/habilitar-cuenta.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <a href="../HTML/menu.html" class="boton-volver">Volver al Menú</a>
+        <h1>Habilitar la cuenta de usuarios</h1>
+    </header>
+    <div class="contact-info">Tel 661 31 15 53 | scriptechnology@gmail.com</div>
+
+    <section class="contenido">
+        <!-- Contenido del cuerpo de la página aquí -->
+        <div class="texto">
+            <div class="script-introduction">
+                <p>Para configurar los perfiles móviles y permitir que los usuarios inicien sesión, es fundamental
+                    habilitar las cuentas de usuario. Esta acción es crucial para implementar medidas de seguridad,
+                    controlar el acceso y personalizar la experiencia del usuario. En el script, iteramos sobre
+                    cada usuario y establecemos la contraseña inicial. Este proceso garantiza un inicio de sesión
+                    seguro y una experiencia personalizada para cada usuario.</p>
+                <p class="explicacion-imagen">La imagen muestra un ejemplo visual de cómo se vería el archivo ps1
+                    generado
+                    para descargar. La parte resaltada en rojo es una configuración de ejemplo que se modificará según
+                    los
+                    datos introducidos en el formulario.</p>
+            </div>
+        </div>
+        <div class="imagen-y-formulario">
+            <div class="imagen-despliegue">
+                <img src="../IMAGEN/habilitar-cuenta/cuenta0.PNG" class="imagen-principal" alt="Imagen 1">
+                <img src="../IMAGEN/habilitar-cuenta/cuenta1.PNG" class="imagen-secundaria" alt="Imagen 2"
+                    style="display: none;">
+            </div>
+
+            <br></br>
+
+            <div class="formulario-completo">
+                <p><strong>Rellena el formulario con tus datos:</strong></p>
+                <form id="config-form">
+                    <div class="form-group">
+                        <input type="text" id="nombre1" placeholder="Nombre del usuario 1" name="p1">
+                        <input type="text" id="apellido1_1" placeholder="Primer apellido usuario 1">
+                        <input type="text" id="apellido2_1" placeholder="Segundo apellido usuario 1">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="nombre2" placeholder="Nombre del usuario 2">
+                        <input type="text" id="apellido1_2" placeholder="Primer apellido usuario 2">
+                        <input type="text" id="apellido2_2" placeholder="Segundo apellido usuario 2">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="nombre3" placeholder="Nombre del usuario 3">
+                        <input type="text" id="apellido1_3" placeholder="Primer apellido usuario 3">
+                        <input type="text" id="apellido2_3" placeholder="Segundo apellido usuario 3">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="nombre4" placeholder="Nombre del usuario 4">
+                        <input type="text" id="apellido1_4" placeholder="Primer apellido usuario 4">
+                        <input type="text" id="apellido2_4" placeholder="Segundo apellido usuario 4">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="nombre5" placeholder="Nombre del usuario 5">
+                        <input type="text" id="apellido1_5" placeholder="Primer apellido usuario 5">
+                        <input type="text" id="apellido2_5" placeholder="Segundo apellido usuario 5">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="nombre6" placeholder="Nombre del usuario 6">
+                        <input type="text" id="apellido1_6" placeholder="Primer apellido usuario 6">
+                        <input type="text" id="apellido2_6" placeholder="Segundo apellido usuario 6">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Contraseña inicial">
+                    </div>
+                        <button type="submit" id="generarScript" onclick="generarScriptPs1()">Generar archivo ps1</button>
+                    
+
+                </form>
+
+            </div>
+
+
+
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Script Support Technology</p>
+    </footer>
+
+    <script src="../JQuery/habilitar-cuenta.js"></script>
+    <script src="../JavaScript/habilitar-cuenta.js"></script>
+
+</body>
+
+</html>

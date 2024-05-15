@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de la red</title>
+    <link rel="stylesheet" href="../CSS/configurar-red.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../HTML/menu.html" class="boton-volver">Volver al Menú</a>
+        <h1>Configuración de la red</h1>
+    </header>
+    <div class="contact-info">Tel 661 31 15 53 | scriptechnology@gmail.com</div>
+
+    <section class="contenido">
+        <!-- Contenido del cuerpo de la página aquí -->
+        <div class="script-introduction">
+            <p>El script de configuración de red automatiza el proceso de
+                configuración de la red en un sistema informático. Incluye
+                comandos para cambiar la dirección IP, el servidor DNS, el
+                gateway y el nombre del equipo. Después de ejecutar el
+                comando para cambiar el nombre del equipo, se reinicia el
+                sistema para aplicar los cambios. Si desea reconfigurar
+                la red sin cambiar el nombre del equipo ni reiniciar,
+                simplemente comente o elimine la línea correspondiente y
+                ejecute el script nuevamente.</p>
+                <p class="explicacion-imagen">La imagen muestra un ejemplo visual de cómo se vería el archivo ps1 generado
+                    para descargar. La parte resaltada en rojo es una configuración de ejemplo que se modificará según los
+                    datos introducidos en el formulario.</p>
+        </div>
+        <div class="imagen-y-formulario">
+            <div class="imagen-despliegue">
+                <img src="../IMAGEN/configurar-red/script0-configRed.PNG" class="imagen-principal" alt="Imagen 1">
+                <img src="../IMAGEN/configurar-red/script1-servidor.PNG" class="imagen-secundaria" alt="Imagen 2"
+                    style="display: none;">
+            </div>
+
+            <br></br>
+            
+            <form id="config-form">
+                <p><strong>Rellena el formulario con tus datos:</strong></p>
+                <input type="text" id="ip" placeholder="Dirección IP">
+                <input type="text" id="prefix" placeholder="Prefijo de longitud">
+                <input type="text" id="gateway" placeholder="Puerta de enlace">
+                <input type="text" id="interface" placeholder="Interfaz">
+                <input type="text" id="dns" placeholder="Servidor DNS">
+                <input type="text" id="pc-name" placeholder="Nombre del PC">
+                <button type="submit">Generar archivo ps1</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Script Support Technology</p>
+    </footer>
+
+    <script src="../JQuery/configurar-red.js"></script>
+    <script src="../JavaScript/configuar-red.js"></script>
+
+</body>
+
+</html>

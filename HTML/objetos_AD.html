@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Support Technology</title>
+    <link rel="stylesheet" href="../CSS/objetos_AD.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="../HTML/menu.html" class="boton-volver">Volver al Menú</a>
+        <h1>Creación de objetos de Active Directory</h1>
+    </header>
+
+
+    <div class="contact-info">Tel 661 31 15 53 | scriptechnology@gmail.com
+    </div>
+
+    
+<div class="contenedor">
+      
+    <section>
+        <p class="explicacion-imagen">En los scripts originales para la creación de grupos y 
+            usuarios, se emplean variables para almacenar información como el nombre del dominio, 
+            el nombre de la unidad organizativa (OU) y el nombre del grupo o usuario. Sin embargo,
+            al generar el archivo ps1 para la creación de estos elementos en el Active Directory, 
+            es necesario incluir la ruta completa de la OU y el nombre completo del grupo o usuario. 
+            Esto se debe a que el archivo ps1 se utiliza en un contexto diferente al del script 
+            original, por lo que requiere detalles precisos para asegurar que los grupos o usuarios 
+            se coloquen correctamente en la ubicación deseada en el Active Directory.</p>
+      
+        <p class="explicacion-imagen2"> 
+            La imagen muestra un ejemplo visual de cómo se vería el archivo ps1 generado
+            para descargar. La parte resaltada en rojo es una configuración de ejemplo que se modificará según los
+            datos introducidos en el formulario.</p>
+         
+            
+        <div class="container">
+            <div class="fomulario1">
+                <div class="imagen-y-formulario1">
+                    <div class="imagen-despliegue1">
+                        <div class="imagenes1">
+                            <img src="../IMAGEN/objetos_AD/Script0-OU.PNG" class="imagen-principal1" alt="Imagen1">
+                            <img src="../IMAGEN/objetos_AD/Script1-OUs.PNG" class="imagen-secundaria1" alt="Imagen1"
+                                style="display: none;">
+                        </div>
+                    </div>
+                    <div class="form1 form-container">
+                        <form id="config-form1">
+                            <h2>CREAR UNIDADES ORGANIZATIVAS</h2>
+                            <p><strong>Rellena el formulario con tus datos:</strong></p>
+                            <input type="text" id="domain" placeholder="Nombre del dominio" pattern="\w+\.\w+"
+                                title="Debe incluir un punto en el nombre del dominio (por ejemplo: ejemplo.com)">
+                            <input type="text" id="ou-principal1" placeholder="Nombre de la OU principal 1">
+                            <input type="text" id="ou-principal2" placeholder="Nombre de la OU principal 2">
+                            <select id="ou-secundaria1-principal">
+                                <option value="">Asignar OU principal</option>
+                                <option value="ou-principal1">OU principal 1</option>
+                                <option value="ou-principal2">OU principal 2</option>
+                            </select>
+                            <input type="text" id="ou-secundaria1"
+                                placeholder="Nombres de las OUs secundarias, separado por comas">
+                            <select id="ou-secundaria2-principal">
+                                <option value="">Asignar OU principal</option>
+                                <option value="ou-principal1">OU principal 1</option>
+                                <option value="ou-principal2">OU principal 2</option>
+                            </select>
+                            <input type="text" id="ou-secundaria2"
+                                placeholder="Nombres de las OUs secundarias, separado por comas">
+
+                            <button type="submit">Generar archivo p1</button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="formulario2">
+                <div class="imagen-y-formulario2">
+                    <div class="imagen-despliegue2">
+                        <div class="imagenes2">
+                            <img src="../IMAGEN/objetos_AD/Script0-Grupos.PNG" class="imagen-principal2" alt="Imagen1">
+                            <img src="../IMAGEN/objetos_AD/Script1-Grupos.PNG" class="imagen-secundaria2" alt="Imagen1"
+                                style="display: none;">
+                        </div>
+                    </div>
+
+                    <div class="form2 form-container">
+                        <form id="config-form2">
+                            <h2>CREAR GRUPOS</h2>
+                            <p><strong>Rellena el formulario con tus datos:</strong></p>
+                            <input type="text" id="domain-name2" placeholder="Nombre de dominio" pattern="\w+\.\w+"
+                                title="Debe incluir un punto en el nombre del dominio (por ejemplo: ejemplo.com)">
+                            <input type="text" id="ou-name2" placeholder="Nombre de la OU donde introducir el grupo">
+                            <textarea id="grupo-names"
+                                placeholder="Nombres de los grupos, separados por coma"></textarea>
+
+                            <button type="submit">Generar archivo ps1</button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="formulario3">
+                <div class="imagen-y-formulario3">
+                    <div class="imagen-despliegue3">
+                        <div class="imagenes3">
+                            <img src="../IMAGEN/objetos_AD/Script0-Usuarios.PNG" class="imagen-principal3"
+                                alt="Imagen1">
+                            <img src="../IMAGEN/objetos_AD/Script1-Usuarios.PNG" class="imagen-secundaria3" alt="Imagen1"
+                                style="display: none;">
+                        </div>
+                    </div>
+                    <div class="form3 form-container">
+                        <form id="config-form3">
+                            <h2>CREAR USUARIOS</h2>
+                            <p><strong>Rellena el formulario con tus datos:</strong></p>
+                            <input type="text" id="domain-name3" placeholder="Nombre de dominio" pattern="\w+\.\w+"
+                                title="Debe incluir un punto en el nombre del dominio (por ejemplo: ejemplo.com)">
+                            <input type="text" id="ou-name3" placeholder="Nombre de la OU donde introducir el usuario">
+                            <input type="text" id="group-name" placeholder="Nombre del grupo donde introducir el usuario">
+                            <input type="text" id="nombre" placeholder="Nombre del usuario">
+                            <input type="text" id="apellido1" placeholder="Primer apellido">
+                            <input type="text" id="apellido2" placeholder="Segundo apellido">
+                            <button type="submit">Generar archivo ps1</button>
+                        </form>
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p>&copy; 2024 Script Support Technology</p>
+        </footer>
+        <script src="../JQuery/objetos_AD.js"></script>
+        <script src="../JavaScript/objetos_AD.js"></script>
+
+</body>
+
+</html>

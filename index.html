@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Support Technology</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+
+</head>
+
+<body>
+    <header class="banner">
+        <div class="encabezado">
+            <h1>Script Support Technology</h1>
+        </div>
+
+        <div class="contact-info">Tel 661 31 15 53 | scriptechnology@gmail.com</div>
+    </header>
+    
+    <section>
+        <div class="container">
+            <div class="text-block">
+                <p>Bienvenido a <strong>Script Support Technology</strong> donde ofrecemos soluciones de automatización
+                    mediante scripts para empresas, con el objetivo de simplificar tareas y ahorrar tiempo en la
+                    consecución de sus metas.</p>
+                <p>Nuestro enfoque se centra en proporcionar una amplia gama de scripts diseñados para automatizar
+                    diversas funciones empresariales. Una vez registrado en nuestra plataforma, tendrás acceso
+                    instantáneo a una biblioteca de scripts listos para usar, que pueden adaptarse a las
+                    necesidades específicas de tu empresa.</p>
+                <p>Ofrecemos la posibilidad de trabajar directamente contigo para entender tus requerimientos
+                    particulares y desarrollar scripts a medida que se ajusten perfectamente a tus procesos y objetivos.
+                </p>
+            </div>
+            <div class="text-block">
+                <p>¿Necesitas algo específico que no encuentras en nuestra biblioteca?</p>
+                <p> ¡No hay problema!</p>
+                <p>Ponte en contacto con nosotros y estaremos encantados de discutir tus necesidades y trabajar en
+                    soluciones personalizadas que impulsen la eficiencia de tu empresa.</p>
+                <p>En Script Support Technology, nos comprometemos a brindar soluciones de automatización efectivas y a
+                    medida que te ayudarán a optimizar tus operaciones y alcanzar tus metas empresariales de manera más
+                    rápida y eficiente. ¡Únete a nosotros y descubre cómo la automatización puede transformar tu negocio
+                    hoy mismo!</p>
+            </div>
+        </div>
+        <p>Somos tu solución en automatización y scripts para mejorar la eficiencia y la productividad en tu entorno
+            tecnológico.</p>
+        <p>¡Contáctanos para más información!</p>
+
+        <section class="imagenes">
+            <img src="./IMAGEN/menu/menu1.PNG" class="banner2-img" alt="Imagen1">
+            <img src="./IMAGEN/menu/menu3.PNG" class="banner2-img" alt="Imagen3">
+        </section>
+
+        <div class="banner">
+            <img src="./IMAGEN/index/logo1.PNG" class="banner-img" alt="Imagen 1">
+            <img src="./IMAGEN/index/index1.PNG" class="banner-img" alt="Imagen 2">
+            <img src="./IMAGEN/index/index2.PNG" class="banner-img" alt="Imagen 3">
+        </div>
+
+        <form class="formulario" onsubmit="return validarRegistro()">
+            <div class="register-text">
+                <h2>¿Todavía no te has registrado?</h2>
+            </div>
+
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" placeholder="Correo electrónico">
+
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" name="password" placeholder="Contraseña"><br></br>
+
+            <button type="button" onclick="validarRegistro()">Registrarse</button>
+            <button type="button" onclick="iniciarSesion()">Iniciar sesión</button>
+            <br>
+
+
+        </form>
+
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Script Support Technology</p>
+    </footer>
+    <script src="./JavaScript/index.js"></script>
+</body>
+
+</html>
+
+<!-- El formulario de registro permitirá a los usuarios proporcionar 
+    su nombre, correo electrónico y contraseña para registrarse en tu sitio. Una vez 
+    que se registren, se podrá recopilar sus datos de contacto y utilizar esa 
+    información para comunicarse con ellos o proporcionarles acceso a servicios 
+    adicionales según sea necesario. -->

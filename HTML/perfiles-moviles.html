@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de perfiles móviles</title>
+    <link rel="stylesheet" href="../CSS/perfiles-moviles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../HTML/menu.html" class="boton-volver">Volver al Menú</a>
+        <h1>Creación de perfiles móviles</h1>
+    </header>
+    <div class="contact-info">Tel 661 31 15 53 | scriptechnology@gmail.com</div>
+
+    <section class="contenido">
+        <!-- Contenido del cuerpo de la página aquí -->
+        <div class="script-introduction">
+            <p>Este script configura perfiles móviles para una lista de usuarios específicos en un entorno de Active Directory. 
+                Primero, define la ruta base donde se almacenarán los perfiles móviles. Luego, itera a través de una lista de 
+                nombres de usuarios y para cada usuario, busca su objeto en Active Directory.</p>
+                <p>Si se encuentra el usuario, configura su perfil móvil utilizando la ruta base y el nombre de usuario 
+                    correspondiente. Si el usuario no se encuentra, muestra un mensaje de error. 
+                    Finalmente, notifica que se han creado los perfiles móviles para los usuarios especificados.</p>
+                    <div class="alert-box"> El primer paso es establecer una ubicación centralizada donde se almacenarán los 
+                        perfiles móviles. Para ello, se crea una carpeta en el servidor y se comparte en la red 
+                        para que los usuarios puedan acceder a ella.
+                    </div>
+                    <p class="explicacion-imagen">La imagen muestra un ejemplo visual de cómo se vería el archivo ps1 generado
+                    para descargar. La parte resaltada en rojo es una configuración de ejemplo que se modificará según los
+                    datos introducidos en el formulario.</p>
+        </div>
+        <div class="imagen-y-formulario">
+            <div class="imagen-despliegue">
+                <img src="../IMAGEN/perfiles-moviles/pmovil0.PNG" class="imagen-principal" alt="Imagen 1">
+                <img src="../IMAGEN/perfiles-moviles/pmovil1.PNG" class="imagen-secundaria" alt="Imagen 2"
+                    style="display: none;">
+            </div>
+
+            <br></br>
+            
+            <form id="config-form">
+                <p><strong>Rellena el formulario con tus datos:</strong></p>
+                <input type="text" id="ip" placeholder="Ruta de la carpeta donde se almacenan los perfiles móviles">
+                <input type="text" id="usuarios" placeholder="Nombres de usuarios separados por comas (SamAccountName)">
+                <p><em>Ejemplo: Pilar Gómez Ramírez, su SamAccountName sería "pgramir"</em></p>
+                <button type="submit">Generar archivo ps1</button>
+            </form>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Script Support Technology</p>
+    </footer>
+
+    <script src="../JQuery/perfiles-moviles.js"></script>
+    <script src="../JavaScript/perfiles-moviles.js"></script>
+
+</body>
+
+</html>

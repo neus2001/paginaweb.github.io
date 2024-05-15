@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 27px 0; /* Reducir el padding superior e inferior */
+    text-align: center;
+    height: 18px;
+    position: fixed;
+}
+
+h1 {
+    display: flex;
+    margin-bottom: 90px;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 0; /* Elimina el margen por defecto */
+    line-height: 1px; /* Establece la misma altura que el encabezado */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10%; /* Agregar margen inferior para separar del footer */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Estilos para el primer banner */
+.banner {
+    text-align: center; /* Alineación del texto */
+    padding: 40px; /* Espaciado interno */
+    position: relative; /* Posición relativa para alinear los controles */
+}
+.banner img {
+    max-width: 70%; /* Ajustar imagen al ancho del contenedor */
+    display: none; /* Ocultar todas las imágenes por defecto */
+    position: absolute; /* Posición absoluta para superponer imágenes */
+    top: 40;
+    left: 30;
+    width: 40%; /* Ancho deseado */
+    height: 450px; /* Altura deseada */
+}
+
+
+/* Estilos para los controles del carrusel */
+.prev, .next {
+    cursor: pointer; /* Cambiar cursor al pasar sobre los controles */
+    position: absolute; /* Posición absoluta para alinear controles */
+    top: 50%; /* Alinear controles verticalmente en el centro */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para visibilidad */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    z-index: 1; /* Asegurar que los controles estén sobre las imágenes */
+}
+.prev {
+    left: 0; /* Alinear control anterior a la izquierda */
+}
+.next {
+    right: 0; /* Alinear control siguiente a la derecha */
+}
+
+/* Estilos para el formulario */
+.formulario {
+    max-width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: -40px; /* Ajustar la posición para que esté a la misma altura que el banner */
+    margin-left:50%;
+}
+.formulario h2 {
+    margin-top: 0; /* Eliminar el margen superior del encabezado */
+}
+.formulario label {
+    display: block; /* Mostrar cada etiqueta en una línea nueva */
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario button {
+    width: calc(100% - 40px); /* Ancho del 100% menos el padding de 10px a cada lado */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.formulario button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.register-text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+align-items: flex-start; /* Alineación vertical */
+line-height: 1.5; /* Establece el interlineado a 1.5 */
+}
+
+.contact-info {
+position: absolute; 
+top: 0; /* Colocar en la parte superior */
+right: 0; /* Colocar en el extremo derecho */
+background-color: #007bff; /* Color de fondo */
+color: #fff; /* Color del texto */
+padding: 10px; /* Espaciado interno */
+}
+
+.text-block {
+width: 85%; /* Ajusta el ancho según tus preferencias */
+padding: 30px 80px; /* Ajusta el espacio entre líneas arriba y abajo, y los lados */
+background-color: #a8e4cb33; /* Color de fondo opcional */
+
+margin-bottom: 30px; /* Espacio entre bloques */
+max-height: 360px; /* Altura máxima */
+ /* Agrega desplazamiento si el contenido es demasiado largo */
+ border: 2px solid #4ec2c2; /* Agrega un borde sólido de 2px con color gris claro */
+ border-radius: 10px; /* Añade esquinas redondeadas */
+}
+
+body{
+    background-image: linear-gradient(to bottom, #ffffff, #aecbcf); /* Cambia los colores según tus preferencias */
+}
+
+
+.banner2-img {
+    flex: 1; /* Para que ambas imágenes ocupen el mismo espacio */
+    width: 50%; /* Para que ocupen todo el ancho disponible */
+    object-fit: cover; /* Para que las imágenes mantengan su relación de aspecto */
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.banner2-img:last-child {
+    margin-right: 0; /* Quita el espacio a la derecha de la última imagen */
+}
+
+.imagenes{
+    display: flex;
+    margin-bottom: 10px;
+}
